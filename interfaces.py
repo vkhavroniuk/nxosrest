@@ -3,14 +3,6 @@ import requests
 from urllib3.exceptions import InsecureRequestWarning
 from dataclasses import dataclass
 
-#class RequestsCustomError(Exception):
-#    def __init__(self, *args):
-#        if args:
-#            self.status_code = args[0]
-#        else:
-#            self.status_code = None
-
-
 @dataclass
 class RequestsCustomError(Exception):
     ''' Class for Custom Exception'''
